@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Property</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* .filtercontainer {
+            top: 79px;
+            /* left: 0px; * /
+            left: -100%;
+            height: 100vh;
+            overflow: scroll;
+        } */
+        .gridcontainer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 8px;
+        }
+
+        @media only screen and (max-width: 590px) {
+            .gridcontainer {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media only screen and (max-width: 376px) {
+            .gridcontainer {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-[#f1f6ff]">
+
+    <header class="bg-white w-full h-20 top-0">
+        <div class="w-full max-w-6xl mx-auto flex items-center justify-between py-6 px-5">
+            <div class="flex items-center flex-row gap-x-2">
+                <span class="grid items-center bg-blue-500 rounded-md text-[18px] p-1.5">
+                    <i class="bx bx-home text-white"></i>
+                </span>
+                <p class="text-blue-600 font-semibold text-lg">Houszilla</p>
+            </div>
+            <div class="hidden lg:flex text-gray-500 text-[17px] items-center gap-x-8">
+                <a href="" class="">Home</a>
+                <a href="" class="">About</a>
+                <a href="" class="">Property</a>
+                <a href="" class="">Contact</a>
+            </div>
+            <div class="flex items-center gap-x-2 sm:gap-x-3">
+                <p class="hidden sm:block text-[15px] text-gray-600">Jay Prajapati</p>
+                <button class="flex items-center cursor-pointer">
+                    <img class="w-8 h-8 rounded-full object-cover cover shadow-md" src="https://randomuser.me/api/portraits/men/10.jpg" alt="">
+                    <i class="bx bx-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="py-8 px-5">
+
+        <!-- Property and Price  -->
+        <div class="w-full max-w-[1100px] mx-auto flex items-center justify-between pb-6">
+            <div>
+                <h1 class="text-2xl sm:text-3xl font-medium text-slate-800">2 BHK Flat</h1>
+                <p class="text-sm sm:text-base text-slate-500 inline-flex items-center gap-x-1"><i class="bx bx-current-location"></i> Sg Highway Ahmedabad</p>
+            </div>
+            <div>
+                <h1 class="text-2xl sm:text-3xl">₹ 1.1 CR</h1>
+            </div>
+        </div>
+
+        <div class="w-full max-w-[1200px] flex items-start flex-row justify-center mx-auto gap-x-4">
+
+            <!-- Left div -->
+            <div class="w-full max-w-[780px] flex items-center justify-center flex-col gap-y-6">
+
+                <!-- Featured Image Galary -->
+                <div class="bg-white rounded-xl shadow-md p-2 sm:p-4">
+                    <div class="grid gap-4">
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=600" alt="">
+                        </div>
+                        <div class="grid grid-cols-5 gap-4">
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=600" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=600" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=600" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://images.pexels.com/photos/1546166/pexels-photo-1546166.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <div class="bg-white rounded-xl shadow-md sm:px-8 px-6 sm:py-8 py-4">
+                    <h1 class="text-slate-800 text-xl font-medium">Description</h1>
+                    <p class="text-gray-600 text-sm mt-2">A spacious 3 bhk multistorey apartment is available for sale in Sheetal Infrastructure Westpark, Vastrapur, Ahmedabad. It has a salable area of 1615 sqft and is available at a price of Rs. 7,430 per sqft. The house is unfurnished. It has maintenance_staff as well as reserved parking.</p>
+
+                    <div class="flex flex-row flex-wrap justify-center gap-x-8 gap-y-3 mt-5">
+                        <span class="block text-left grow flex-col">
+                            <p class="text-gray-700 text-sm">Carpet area</p>
+                            <p class="text-[15px] font-medium">969 sq ft</p>
+                        </span>
+                        <span class="block text-left grow flex-col">
+                            <p class="text-gray-700 text-sm">Status</p>
+                            <p class="text-[15px] font-medium">Ready to move</p>
+                        </span>
+                        <span class="block text-left grow flex-col">
+                            <p class="text-gray-700 text-sm">New/Resale</p>
+                            <p class="text-[15px] font-medium">New</p>
+                        </span>
+                        <span class="block text-left grow flex-col">
+                            <p class="text-gray-700 text-sm">Age of Property</p>
+                            <p class="text-[15px] font-medium">1 - 2 years</p>
+                        </span>
+                    </div>
+
+                </div>
+
+                <!-- 
+                    Menu Switch Case
+                    1. Sort Array
+                    2. Total Of All Element
+                    3. Merge Two Array -->
+
+                <!-- Amenities -->
+                <div class="w-full bg-white rounded-xl shadow-md sm:px-8 px-6 sm:py-8 py-4">
+                    <h1 class="text-slate-800 text-xl font-medium">Amenities</h1>
+                    <div class="gridcontainer mt-5 sm:mt-7">
+                        <span class="inline-flex items-center gap-x-1">
+                            <i class="bx bx-check-circle text-green-500"></i>
+                            <p class="text-gray-900 text-[15px]">Gym</p>
+                        </span>
+                        <span class="inline-flex items-center gap-x-1">
+                            <i class="bx bx-check-circle text-green-500"></i>
+                            <p class="text-gray-900 text-[15px]">Lift</p>
+                        </span>
+                        <span class="inline-flex items-center gap-x-1">
+                            <i class="bx bx-check-circle text-green-500"></i>
+                            <p class="text-gray-900 text-[15px]">Swimming Pool</p>
+                        </span>
+                        <span class="inline-flex items-center gap-x-1">
+                            <i class="bx bx-check-circle text-green-500"></i>
+                            <p class="text-gray-900 text-[15px]">Power Backup</p>
+                        </span>
+                        <span class="inline-flex items-center gap-x-1">
+                            <i class="bx bx-check-circle text-green-500"></i>
+                            <p class="text-gray-900 text-[15px]">Maintance Staff</p>
+                        </span>
+                        <span class="inline-flex items-center gap-x-1">
+                            <i class="bx bx-check-circle text-green-500"></i>
+                            <p class="text-gray-900 text-[15px]">24 x 7 Security</p>
+                        </span>
+                        <span class="inline-flex items-center gap-x-1">
+                            <i class="bx bx-check-circle text-green-500"></i>
+                            <p class="text-gray-900 text-[15px]">Vehicle Parking</p>
+                        </span>
+                        <span class="inline-flex items-center gap-x-1">
+                            <i class="bx bx-check-circle text-green-500"></i>
+                            <p class="text-gray-900 text-[15px]">Club House</p>
+                        </span>
+                        <span class="inline-flex items-center gap-x-1">
+                            <i class="bx bx-check-circle text-green-500"></i>
+                            <p class="text-gray-900 text-[15px]">Children Playarea</p>
+                        </span>
+                        <span class="inline-flex items-center gap-x-1">
+                            <i class='bx bx-x-circle text-red-500'></i>
+                            <p class="text-gray-900 text-[15px]">Sports</p>
+                        </span>
+                        <span class="inline-flex items-center gap-x-1">
+                            <i class='bx bx-x-circle text-red-500'></i>
+                            <p class="text-gray-900 text-[15px]">Garndens</p>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- leave Review -->
+                <div class="w-full bg-white rounded-xl shadow-md sm:px-8 px-5 sm:py-8 py-4">
+                    <h1 class="text-slate-800 text-xl font-medium mb-6">Leave a Review</h1>
+                    <div class="w-full border border-gray-200 rounded-lg bg-gray-50">
+                        <div class="px-4 py-2 bg-white rounded-t-lg">
+                            <label for="comment" class="sr-only">Your comment</label>
+                            <textarea id="comment" rows="4" class="w-full px-0 text-sm text-gray-900 bg-white border-0 focus:ring-0" placeholder="Write a review..." required></textarea>
+                        </div>
+                        <div class="flex items-center justify-between px-3 py-2 border-t">
+                            <button type="submit" class="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-blue-600 rounded-md focus:ring-4 focus:ring-blue-200 hover:bg-blue-800">
+                                Post Review
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- All Review -->
+                <div class="w-full bg-white rounded-xl shadow-md sm:px-8 px-4 sm:py-8 py-4">
+                    <h1 class="text-slate-800 text-xl font-medium mb-6">2 Reviews</h1>
+                    <div class="flex items-start flex-col gap-y-10 sm:px-3">
+                        <!-- Review 1 -->
+                        <div class="flex flex-row items-start gap-x-5">
+                            <span class="w-full max-w-[60px] h-[60px] grid rounded place-items-center text-2xl bg-gray-500 text-white p-3">R</span>
+                            <div class="flex flex-col">
+                                <div class="flex items-center justify-between">
+                                    <h1 class="font-medium text-[18px]">Robin</h1>
+                                    <span class="text-[14px] font-normal text-gray-600">7/31/2023</span>
+                                </div>
+                                <p class="text-sm text-gray-600">eveniet, ut dicta expedita iure laudantium ullam pariatur tempora maxime totam accusantium! Lorem lor ipsum dolor, sit amet consectetur adipisicing elit. Quam exercitationem </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Right Div -->
+            <div class="w-full hidden sm:block min-[853px]:max-w-[360px] max-w-[250px]">
+
+                <!-- Contact Publisher -->
+                <div class="bg-white rounded-xl shadow-md text-center flex items-center justify-center flex-col px-3 py-6">
+                    <img class="w-[90px] h-[90px] rounded-full object-cover mb-1.5" src="https://randomuser.me/api/portraits/men/9.jpg" alt="">
+                    <h1 class="text-[20px] font-semibold text-slate-800">Sharma Developers</h1>
+                    <p class="text-gray-600">Builder</p>
+                    <hr class="w-full my-4">
+                    <p class="text-slate-900">Connect with seller right now</p>
+                    <span class="inline-flex items-center text-gray-600 gap-x-2 mt-2">
+                        <i class="bx bx-phone"></i>
+                        <p>4726472647</p>
+                    </span>
+                    <span class="inline-flex items-center text-gray-600 gap-x-2">
+                        <i class="bx bx-envelope"></i>
+                        <p>sharma@gmail.com</p>
+                    </span>
+                </div>
+
+                <br>
+
+                <!-- Request Booking -->
+                <div class="bg-white rounded-xl shadow-md text-center flex items-center justify-center flex-col px-8 py-4">
+                    <h1 class="text-left mr-auto pt-4 pb-4 text-[19px] text-slate-800 font-medium">Request for Site Visit</h1>
+                    <div class="w-full flex items-start flex-col mb-4">
+                        <label for="name" class="block mb-1 text-sm text-gray-900">First name <span class="text-red-500">*</span></label>
+                        <input type="text" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full py-2 px-3 " placeholder="John" required>
+                    </div>
+                    <div class="w-full flex items-start flex-col mb-4">
+                        <label for="email" class="block mb-1 text-sm text-gray-900">Email <span class="text-red-500">*</span></label>
+                        <input type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full py-2 px-3 " placeholder="John" required>
+                    </div>
+                    <div class="w-full flex items-start flex-col mb-4">
+                        <label for="phonenumber" class="block mb-1 text-sm text-gray-900">Phone No. <span class="text-red-500">*</span></label>
+                        <input type="text" id="phonenumber" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full py-2 px-3 " placeholder="John" required>
+                    </div>
+                    <div class="w-full flex items-start flex-col mb-4">
+                        <label for="message" class="block mb-1 text-sm text-gray-900">Your message</label>
+                        <textarea id="message" rows="4" class="resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button class="bg-blue-600 text-white w-full py-2 rounded-md">Send Request</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

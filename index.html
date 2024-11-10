@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hero {
+            width: 100%;
+            height: 500px;
+            max-width: 1100px;
+            margin: 0 auto;
+            /* b
+            ackground-image: url(https://images.pexels.com/photos/565324/pexels-photo-565324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-repeat: no-repeat;
+            background-size: contain; */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="w-full max-w-6xl mx-auto flex items-center justify-between py-6 px-5">
+        <div class="flex items-center flex-row gap-x-2">
+            <span class="grid items-center bg-blue-500 rounded-md text-[18px] p-1.5">
+                <i class="bx bx-home text-white"></i>
+            </span>
+            <p class="text-blue-600 font-semibold text-lg">Houszilla</p>
+        </div>
+        <div class="hidden lg:flex text-gray-500 text-[17px] items-center gap-x-8">
+            <a href="" class="text-blue-500 font-semibold">Home</a>
+         
+            <a href="property.html" class="">Listing</a>
+            <a href="" class="">Contact</a>
+        </div>
+        <div class="flex items-center gap-x-2 sm:gap-x-4">
+            <a href="login.html">Sign In</a>
+            <a href="signup.html" class="hidden sm:block bg-blue-600 text-white text-center px-5 py-2 rounded-lg">Create Account</a>
+            <a href="signup.html" class="block sm:hidden bg-blue-600 text-white text-xs text-center px-2 py-2 rounded-lg">Signup</a>
+        </div>
+    </div>
+
+    <div class="px-5">
+        <div class="hero sm:overflow-hidden relative mt-3 shadow-lg">
+            <img class="w-full h-full" src="hero-bg.png" alt="">
+            <div class="absolute w-full h-full rounded-2xl top-0 backdrop-brightness-[.7]"></div>
+            <div class="w-full h-full flex flex-col items-start absolute top-20 sm:left-20 px-5">
+                <h1 class="text-white text-4xl font-bold mb-1.5">Find Your Dream House</h1>
+                <h1 class="text-white text-4xl font-bold mb-1.5">With Your Small</h1>
+                <h1 class="text-white text-4xl font-bold mb-1.5">Family Here</h1>
+                <p class="text-gray-100 w-full max-w-[400px] mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, nobis! Quae laborum dolores </p>
+                <div class="w-full max-w-xl shadow-xl sm:shadow-md flex sm:items-start flex-col mt-5 rounded-b-2xl sm:rounded-b-none">
+                    <div class="bg-white flex items-center justify-center sm:justify-start gap-x-5 rounded-t-2xl px-3 -mb-3">
+                        <button class="px-4 py-4 text-blue-500 font-semibold">Rent</button>
+                        <button class="px-4 py-4 text-gray-500 font-semibold">Buy</button>
+                        <button class="px-4 py-4 text-gray-500 font-semibold">Sell</button>
+                    </div>
+                    <div class="bg-white flex flex-col sm:flex-row items-center justify-center px-4 py-4 rounded-b-2xl gap-y-3 rounded-r-2xl">
+                        <div class="w-full max-w-[340px] sm:max-w-[140px]">
+                            <p class="text-[14px] text-gray-500">Location</p>
+                            <input type="text" class="text-zinc-700 font-semibold" value="New York">
+                        </div>
+                        <div class="w-full max-w-[340px] sm:max-w-[140px]">
+                            <p class="text-[14px] text-gray-500">Type</p>
+                            <input type="text" class="text-zinc-700 font-semibold" value="Vila">
+                        </div>
+                        <div class="w-full max-w-[340px] sm:max-w-[140px]">
+                            <p class="text-[14px] text-gray-500">Price</p>
+                            <input type="text" class="text-zinc-700 font-semibold" value="333$">
+                        </div>
+                        <button class="bg-blue-600 text-white px-6 py-3 rounded-xl">Find</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-[260px] sm:my-14"></div>
+
+    <div class="w-full max-w-7xl mx-auto flex items-center justify-center flex-col sm:flex-row px-5 sm:px-0 gap-y-6">
+        <div class="w-full max-w-[590px] flex items-center justify-center gap-x-4">
+            <div class="bg-cover bg-center shadow-lg w-full max-w-[230px] h-[320px] rounded-xl" style="background-image: url(https://images.pexels.com/photos/2587054/pexels-photo-2587054.jpeg?auto=compress&cs=tinysrgb&w=600);">
+            </div>
+            <div class="bg-cover bg-center shadow-lg w-full max-w-[230px] h-[320px] rounded-xl" style="background-image: url(https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg?auto=compress&cs=tinysrgb&w=600);">
+            </div>
+        </div>
+        <div class="w-full max-w-[500px] flex flex-col items-center">
+            <h1 class="text-4xl text-slate-900 font-semibold text-center">We Help People To Find Homes</h1>
+            <p class="text-gray-500 font-light mt-1 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod velit possimus, maiores debitis recusandae nobis.!</p>
+            <a href="" class="bg-blue-600 px-4 py-1.5 text-white rounded-md mt-4">Get In Touch</a>
+        </div>
+    </div>
+
+    <div class="my-20"></div>
+
+    <div class=" w-full max-w-7xl mx-auto flex items-center justify-center flex-row gap-x-14  flex-col sm:flex-row px-5 sm:px-0 gap-y-6">
+        <div class="w-full max-w-[500px] flex items-center flex-col justify-end">
+            <h1 class="text-4xl font-semibold text-slate-900 text-center">We Provide Best Property For You</h1>
+            <p class="text-gray-500 font-normal mt-1 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod velit possimus, maiores debitis recusandae nobis.!</p>
+            <div class="flex items-center flex-row mt-6 gap-x-6">
+                <span class="flex items-center flex-col">
+                    <p class="text-2xl text-blue-500">5k+</p>
+                    <p class="text-[13px] text-gray-600 text-center">Customers</p>
+                </span>
+                <span class="flex items-center flex-col">
+                    <p class="text-2xl text-blue-500">2k+</p>
+                    <p class="text-[13px] text-gray-600 text-center">Property</p>
+                </span>
+                <span class="flex items-center flex-col">
+                    <p class="text-2xl text-blue-500">10k+</p>
+                    <p class="text-[13px] text-gray-600 text-center">Awards</p>
+                </span>
+
+            </div>
+        </div>
+        <div>
+            <img class="w-full max-w-[330px] rounded-2xl shadow-lg" src="https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+        </div>
+    </div>
+
+    <div class="my-20"></div>
+
+    <div class="">
+        <p class="text-blue-500 text-[15px] text-center">Our Testimonials</p>
+        <p class="text-slate-900 text-3xl text-center font-semibold">Clients Feedback</p>
+        <div class="flex items-center justify-center flex-wrap mt-8 gap-x-6 gap-y-6 px-4 sm:px-0">
+            <div class="w-full max-w-[340px] border bg-white shadow-2xl rounded-2xl p-4">
+                <div class="flex items-center flex-row">
+                    <img class="w-12 h-12 rounded-full" src="https://randomuser.me/api/portraits/men/44.jpg" alt="">
+                    <span class="block ml-3">
+                        <p class="font-semibold text-slate-800 leading-4">John Doe</p>
+                        <p class="text-gray-600 text-sm">CEO of America</p>
+                    </span>
+                </div>
+                <p class="text-gray-600 mt-3 mb-6">"Lorem ipsum, dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi assumenda quos."</p>
+                <span class="text-lg text-yellow-500">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </span>
+            </div>
+            <div class="w-full max-w-[340px] border bg-white shadow-2xl rounded-2xl p-4">
+                <div class="flex items-center flex-row">
+                    <img class="w-12 h-12 rounded-full" src="https://randomuser.me/api/portraits/men/44.jpg" alt="">
+                    <span class="block ml-3">
+                        <p class="font-semibold text-slate-800 leading-4">John Doe</p>
+                        <p class="text-gray-600 text-sm">CEO of America</p>
+                    </span>
+                </div>
+                <p class="text-gray-600 mt-3 mb-6">"Lorem ipsum, dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi assumenda quos."</p>
+                <span class="text-lg text-yellow-500">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </span>
+            </div>
+            <div class="w-full max-w-[340px] border bg-white shadow-2xl rounded-2xl p-4">
+                <div class="flex items-center flex-row">
+                    <img class="w-12 h-12 rounded-full" src="https://randomuser.me/api/portraits/men/44.jpg" alt="">
+                    <span class="block ml-3">
+                        <p class="font-semibold text-slate-800 leading-4">John Doe</p>
+                        <p class="text-gray-600 text-sm">CEO of America</p>
+                    </span>
+                </div>
+                <p class="text-gray-600 mt-3 mb-6">"Lorem ipsum, dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi assumenda quos."</p>
+                <span class="text-lg text-yellow-500">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-20"></div>
+
+    <!--  
+    change karay, alag task nu (weekly report) practice task 
+    
+    28 Day4 Box Model, Display Properties,div
+    
+-->
+
+    <div class="w-full max-w-6xl mx-auto  px-2 sm:px-0">
+        <div class="flex justify-between mb-5 px-5">
+            <h1 class="text-slate-900 text-[19px] sm:text-2xl font-semibold">Popular Residency</h1>
+            <span class="flex items-center text-[19px] sm:text-2xl text-blue-600">
+                <p>View All</p>
+                <i class="bx bxs-right-arrow-alt"></i>
+            </span>
+        </div>
+        <div class="flex items-center justify-center flex-wrap gap-x-8 gap-y-8">
+            <div class="border bg-gray-50 py-3 px-3 rounded-xl">
+                <img class="w-full max-w-[260px] rounded-xl shadow" src="https://images.pexels.com/photos/13203179/pexels-photo-13203179.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                <h1 class="text-xl mt-3 font-semibold mb-0.5 ml-1.5">Kylv Vila</h1>
+                <span class="flex items-center gap-x-1.5 text-gray-500  ml-1.5">
+                    <i class="bx bx-current-location"></i>
+                    <p>New York, USA</p>
+                </span>
+                <div class="flex items-center flex-wrap gap-x-2 mt-3 ml-1.5">
+                    <span class="bg-gray-100 rounded-md px-2 py-1.5 flex items-center gap-x-2">
+                        <i class='bx bxs-bed text-yellow-600 text-[20px]'></i>
+                        <p class="text-[13px]">1</p>
+                    </span>
+                    <span class="bg-gray-100 rounded-md px-2 py-1.5 flex items-center gap-x-2">
+                        <i class='bx bxs-bath text-blue-500 text-[20px]'></i>
+                        <p class="text-[13px]">2</p>
+                    </span>
+                    <span class="bg-gray-100 rounded-md px-2 py-1.5 flex items-center gap-x-2">
+                        <i class='bx bxs-ruler -rotate-45 text-green-500 text-[20px]'></i>
+                        <p class="text-[13px]">60 m<sup>2</sup></p>
+                    </span>
+                </div>
+                <div class="flex justify-between items-center mt-5 mb-2 ml-1.5">
+                    <a href="propertydetail.html" class="bg-blue-600 text-white px-3 py-1.5 rounded-md text-[13px]">Buy Now</a>
+                    <h1 class="font-semibold text-slate-900 text-xl">$ 62000</h1>
+                </div>
+            </div>
+            <div class="border bg-gray-50 py-3 px-3 rounded-xl">
+                <img class="w-full max-w-[260px] rounded-xl shadow" src="https://images.pexels.com/photos/4255722/pexels-photo-4255722.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                <h1 class="text-xl mt-3 font-semibold mb-0.5 ml-1.5">Kylv Vila</h1>
+                <span class="flex items-center gap-x-1.5 text-gray-500  ml-1.5">
+                    <i class="bx bx-current-location"></i>
+                    <p>New York, USA</p>
+                </span>
+                <div class="flex items-center flex-wrap gap-x-2 mt-3 ml-1.5">
+                    <span class="bg-gray-100 rounded-md px-2 py-1.5 flex items-center gap-x-2">
+                        <i class='bx bxs-bed text-yellow-600 text-[20px]'></i>
+                        <p class="text-[13px]">1</p>
+                    </span>
+                    <span class="bg-gray-100 rounded-md px-2 py-1.5 flex items-center gap-x-2">
+                        <i class='bx bxs-bath text-blue-500 text-[20px]'></i>
+                        <p class="text-[13px]">2</p>
+                    </span>
+                    <span class="bg-gray-100 rounded-md px-2 py-1.5 flex items-center gap-x-2">
+                        <i class='bx bxs-ruler -rotate-45 text-green-500 text-[20px]'></i>
+                        <p class="text-[13px]">60 m<sup>2</sup></p>
+                    </span>
+                </div>
+                <div class="flex justify-between items-center mt-5 mb-2 ml-1.5">
+                    <a href="propertydetail.html" class="bg-blue-600 text-white px-3 py-1.5 rounded-md text-[13px]">Buy Now</a>
+                    <h1 class="font-semibold text-slate-900 text-xl">$ 62000</h1>
+                </div>
+            </div>
+            <div class="border bg-gray-50 py-3 px-3 rounded-xl">
+                <img class="w-full max-w-[260px] rounded-xl shadow" src="https://images.pexels.com/photos/13203179/pexels-photo-13203179.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                <h1 class="text-xl mt-3 font-semibold mb-0.5 ml-1.5">Kylv Vila</h1>
+                <span class="flex items-center gap-x-1.5 text-gray-500  ml-1.5">
+                    <i class="bx bx-current-location"></i>
+                    <p>New York, USA</p>
+                </span>
+                <div class="flex items-center flex-wrap gap-x-2 mt-3 ml-1.5">
+                    <span class="bg-gray-100 rounded-md px-2 py-1.5 flex items-center gap-x-2">
+                        <i class='bx bxs-bed text-yellow-600 text-[20px]'></i>
+                        <p class="text-[13px]">1</p>
+                    </span>
+                    <span class="bg-gray-100 rounded-md px-2 py-1.5 flex items-center gap-x-2">
+                        <i class='bx bxs-bath text-blue-500 text-[20px]'></i>
+                        <p class="text-[13px]">2</p>
+                    </span>
+                    <span class="bg-gray-100 rounded-md px-2 py-1.5 flex items-center gap-x-2">
+                        <i class='bx bxs-ruler -rotate-45 text-green-500 text-[20px]'></i>
+                        <p class="text-[13px]">60 m<sup>2</sup></p>
+                    </span>
+                </div>
+                <div class="flex justify-between items-center mt-5 mb-2 ml-1.5">
+                    <a href="propertydetail.html" class="bg-blue-600 text-white px-3 py-1.5 rounded-md text-[13px]">Buy Now</a>
+                    <h1 class="font-semibold text-slate-900 text-xl">$ 62000</h1>
+                </div>
+            </div>
+            <div class="border bg-gray-50 py-3 px-3 rounded-xl">
+                <img class="w-full max-w-[260px] rounded-xl shadow" src="https://images.pexels.com/photos/13203179/pexels-photo-13203179.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                <h1 class="text-xl mt-3 font-semibold mb-0.5 ml-1.5">Kylv Vila</h1>
+                <span class="flex items-center gap-x-1.5 text-gray-500  ml-1.5">
+                    <i class="bx bx-current-location"></i>
+                    <p>New York, USA</p>
+                </span>
+                <div class="flex items-center flex-wrap gap-x-2 mt-3 ml-1.5">
+                    <span class="bg-gray-100 rounded-md px-2 py-1.5 flex items-center gap-x-2">
+                        <i class='bx bxs-bed text-yellow-600 text-[20px]'></i>
+                        <p class="text-[13px]">1</p>
+                    </span>
+                    <span class="bg-gray-100 rounded-md px-2 py-1.5 flex items-center gap-x-2">
+                        <i class='bx bxs-bath text-blue-500 text-[20px]'></i>
+                        <p class="text-[13px]">2</p>
+                    </span>
+                    <span class="bg-gray-100 rounded-md px-2 py-1.5 flex items-center gap-x-2">
+                        <i class='bx bxs-ruler -rotate-45 text-green-500 text-[20px]'></i>
+                        <p class="text-[13px]">60 m<sup>2</sup></p>
+                    </span>
+                </div>
+                <div class="flex justify-between items-center mt-5 mb-2 ml-1.5">
+                    <a href="propertydetail.html" class="bg-blue-600 text-white px-3 py-1.5 rounded-md text-[13px]">Buy Now</a>
+                    <h1 class="font-semibold text-slate-900 text-xl">$ 62000</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-14"></div>
+
+    <footer class="bg-blue-50 mt-20 px-4">
+        <div class="w-full max-w-5xl flex flex-col items-center justify-center mx-auto sm:flex-row sm:justify-between pt-9 px-4 sn:px-10 gap-x-6">
+            <div class="text-center sm:text-left mb-6 sm:mb-0">
+                <p class="text-2xl font-bold text-blue-600">Houszilla</p>
+                <p class="text-[#4f5d78] mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quidem reiciendis. Autem dolorem maxime aperiam itaque necessitatibus</p>
+            </div>
+            <div class="w-full sm:max-w-[400px] flex justify-center flex-row gap-x-4">
+                <div class="w-full max-w-[200px] flex flex-col gap-y-3">
+                    <p class="text-[#32324e] font-semibold">Company</p>
+                    <a href="" class="text-[#4f5d78] text-[15px]">About us</a>
+                    <a href="" class="text-[#4f5d78] text-[15px]">Pricing plans</a>
+                    <a href="" class="text-[#4f5d78] text-[15px]">Our blog</a>
+                    <a href="" class="text-[#4f5d78] text-[15px]">Contacts</a>
+                </div>
+                <div class="w-full max-w-[200px] flex flex-col gap-y-3">
+                    <p class="text-[#32324e] font-semibold">Support</p>
+                    <a href="" class="text-[#4f5d78] text-[15px]">Help center</a>
+                    <a href="" class="text-[#4f5d78] text-[15px]">Ask a question</a>
+                    <a href="" class="text-[#4f5d78] text-[15px]">Privacy policy</a>
+                    <a href="" class="text-[#4f5d78] text-[15px]">Terms & conditions</a>
+                </div>
+            </div>
+        </div>
+        <div class="my-8 sm:my-14"></div>
+        <div class="w-full max-w-5xl mx-auto border border-white rounded-t-xl flex items-center flex-col sm:flex-row gap-y-2 justify-center sm:justify-between gap-x-3 px-5 sm:px-10 py-6" style="background: linear-gradient(to top, hsl(216, 75%, 97%), hsl(216, 38%, 95%));">
+            <p class="text-[#4f5d78]">© 2023 Houszilla All Rights Reserved</p>
+            <div class="text-[#4f5d78] text-lg flex items-center justify-center gap-x-6">
+                <i class="bx bxl-instagram-alt"></i>
+                <i class="bx bxl-facebook-circle"></i>
+                <i class="bx bxl-twitter"></i>
+                <i class="bx bxl-linkedin-square"></i>
+                <i class="bx bxs-envelope"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

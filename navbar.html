@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#f1f6ff]">
+
+    <header class="bg-white w-full">
+        <div class="w-full max-w-6xl mx-auto flex items-center justify-between py-5 px-5">
+            <div class="flex items-center flex-row gap-x-2">
+                <span class="grid items-center bg-blue-500 rounded-md text-[18px] p-1.5">
+                    <i class="bx bx-home text-white"></i>
+                </span>
+                <p class="text-blue-600 font-semibold text-lg">Houszilla</p>
+            </div>
+            <div class="hidden lg:flex text-gray-500 text-[17px] items-center gap-x-8">
+                <a href="" class="">Home</a>
+                <a href="" class="">About</a>
+                <a href="" class="">Property</a>
+                <a href="" class="">Contact</a>
+            </div>
+            <div class="relative flex items-center gap-x-2 sm:gap-x-3">
+                <!-- <p class="hidden sm:block text-[15px] text-gray-600">Jay Prajapati</p> -->
+                <button class="flex items-center cursor-pointer">
+                    <img class="w-8 h-8 rounded-full object-cover cover shadow-md" src="https://randomuser.me/api/portraits/men/10.jpg" alt="">
+                    <i class="bx bx-chevron-down"></i>
+                </button>
+                <div class="w-[180px] bg-white flex flex-col gap-y-3 text-sm text-slate-700 absolute top-10 right-2 rounded-md shadow px-4 py-3">
+                    <a href="">My Account</a>
+                    <a href="">Change Password</a>
+                    <a href="">Log out</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:hidden w-full absolute bottom-0 flex items-center justify-center bg-white py-2.5">
+            <span class="grow flex items-center flex-col text-slate-600 text-sm">
+                <i class="bx bx-home-circle text-[19px]"></i>
+                <p>Home</p>
+            </span>
+            <span class="grow flex items-center flex-col text-blue-600 text-sm">
+                <i class="bx bx-building-house text-[19px]"></i>
+                <p>Property</p>
+            </span>
+            <span class="grow flex items-center flex-col text-slate-600 text-sm">
+                <i class="bx bx-info-circle text-[19px]"></i>
+                <p>About</p>
+            </span>
+            <span class="grow flex items-center flex-col text-slate-600 text-sm">
+                <i class="bx bx-user-circle text-[19px]"></i>
+                <p>Account</p>
+            </span>
+        </div>
+    </header>
+
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Property</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#f9fbfc]">
+
+    <header class="bg-white w-full h-20 top-0">
+        <div class="w-full max-w-6xl mx-auto flex items-center justify-between py-5 px-5">
+            <div class="flex items-center flex-row gap-x-2">
+                <span class="grid items-center bg-blue-500 rounded-md text-[18px] p-1.5">
+                    <i class="bx bx-home text-white"></i>
+                </span>
+                <p class="text-blue-600 font-semibold text-lg">Houszilla</p>
+            </div>
+            <div class="hidden lg:flex text-gray-500 text-[17px] items-center gap-x-8">
+                <a href="index.html" class="">Home</a>
+                <a href="" class="">Listing</a>
+                <a href="myproperty.html" class="">My Property</a>
+            </div>
+
+            <div class="flex items-center gap-x-2 sm:gap-x-3">
+                <p class="hidden sm:block text-[15px] text-gray-600">Jay Prajapati</p>
+                <button class="flex items-center cursor-pointer">
+                    <img class="w-8 h-8 rounded-full object-cover cover shadow-md" src="https://randomuser.me/api/portraits/men/10.jpg" alt="">
+                    <i class="bx bx-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="bg-white w-full flex justify-center border-b border-t">
+        <div class="w-full max-w-6xl flex items-center justify-between px-4 sm:px-10 py-3">
+            <div class="inline-flex items-center gap-x-2 sm:gap-x-4">
+                <button class="text-2xl text-gray-500 border rounded-full grid place-items-center">
+                    <i class="bx bx-chevron-left"></i>
+                </button>
+                <h1 class="text-slate-700 text-[17px] font-medium">Add Property</h1>
+            </div>
+            <button class="bg-blue-600 text-white text-[15px] px-5 py-1.5 rounded-md">
+                Publish
+            </button>
+        </div>
+    </div>
+
+
+    <div class="hidden fixed inset-0 z-50 bg-black bg-opacity-50 flex justify-center items-center">
+        <div class="bg-white rounded-lg text-center shadow-lg px-10 py-8">
+            <p class="text-4xl mb-2">🎉</p>
+            <h2 class="text-2xl font-semibold mb-4">New Property Added</h2>
+            <a class="text-blue-500 px-3 py-2 cursor-pointer rounded-lg">View</a>
+        </div>
+    </div>
+
+
+    <div class="">
+        <div class="w-full max-w-6xl mx-auto flex flex-col md:flex-row gap-x-8 pt-6 px-3 sm:px-6 gap-y-10">
+
+            <!-- About Property -->
+            <div class="w-full">
+                <h1 class="text-[21px] mb-4 font-medium text-slate-800">About Property</h1>
+
+                <div class="bg-white rounded-xl px-4 sm:px-8 py-4 shadow-md">
+                    <h3 class="text-slate-900 font-medium text-lg mb-4">Property Information</h3>
+                    <div class="w-full">
+                        <p class="text-gray-600 text-[15px] mb-1.5">Property Name <span class="text-red-600">*</span></p>
+                        <input type="text" placeholder="RantnaDeep Flat" class="w-full border text-[15px] px-3 py-1.5 rounded-md bg-transparent focus:ring-blue-400 focus:ring-offset-1 focus:ring-2 focus:outline-none">
+                    </div>
+
+                    <h3 class="text-gray-600 text-[15px] mb-1.5 mt-5">Property Images <span class="text-red-600">*</span></h3>
+                    <div class="w-full max-w-full flex gap-x-5">
+                        <div class="w-20 h-20 relative rounded-md">
+                            <img class="w-full h-full object-cover rounded-md" src="https://images.pexels.com/photos/5087167/pexels-photo-5087167.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                            <button class="absolute top-0 right-0 bg-white grid place-items-center mt-1.5 mr-1.5 ronded-md">
+                                <i class="bx bx-x"></i>
+                            </button>
+                        </div>
+                        <div class="w-20 h-20 relative rounded-md">
+                            <img class="w-full h-full object-cover rounded-md" src="https://images.pexels.com/photos/5087167/pexels-photo-5087167.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                            <button class="absolute top-0 right-0 bg-white grid place-items-center mt-1.5 mr-1.5 ronded-md">
+                                <i class="bx bx-x"></i>
+                            </button>
+                        </div>
+                        <div class="w-20 h-20 relative rounded-md">
+                            <img class="w-full h-full object-cover rounded-md" src="https://images.pexels.com/photos/5087167/pexels-photo-5087167.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                            <button class="absolute top-0 right-0 bg-white grid place-items-center mt-1.5 mr-1.5 ronded-md">
+                                <i class="bx bx-x"></i>
+                            </button>
+                        </div>
+                        <div class="w-20 h-20 relative rounded-md">
+                            <img class="w-full h-full object-cover rounded-md" src="https://images.pexels.com/photos/5087167/pexels-photo-5087167.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                            <button class="absolute top-0 right-0 bg-white grid place-items-center mt-1.5 mr-1.5 ronded-md">
+                                <i class="bx bx-x"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <hr class="w-full px-3 my-5">
+
+                    <h3 class="text-slate-900 font-medium text-lg mb-3">Property Location</h3>
+                    <div class="w-full">
+                        <p class="text-gray-600 text-[15px] mb-1">Address <span class="text-red-600">*</span></p>
+                        <input type="text" placeholder="RantnaDeep Flat" class="w-full border text-[15px] px-3 py-1.5 rounded-md bg-transparent focus:ring-blue-400 focus:ring-offset-1 focus:ring-2 focus:outline-none">
+                    </div>
+
+                    <hr class="w-full px-3 my-6">
+
+                    <h3 class="text-slate-900 font-medium text-lg mb-3">Price</h3>
+                    <div class="w-full">
+                        <p class="text-gray-600 text-[15px] mb-1">Cost <span class="text-red-600">*</span></p>
+                        <input type="text" placeholder="RantnaDeep Flat" class="w-full border text-[15px] px-3 py-1.5 rounded-md bg-transparent focus:ring-blue-400 focus:ring-offset-1 focus:ring-2 focus:outline-none">
+                    </div>
+
+                    <hr class="w-full px-3 my-6">
+
+                    <h3 class="text-slate-900 font-medium text-lg mb-3">Property Type</h3>
+                    <div class="w-full">
+                        <p class="text-gray-600 text-[15px] mb-1">Cost <span class="text-red-600">*</span></p>
+                        <div class="flex items-center gap-x-3">
+                            <label for="flat">
+                                <input id="flat" type="radio" name="raidobtn" value="1bhk" class="hidden peer">
+                                <div class="flex items-center px-3 py-0.5 text-[13px] text-gray-500 bg-white border border-gray-200 rounded-full cursor-pointer peer-checked:bg-blue-100 peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-blue-700 hover:bg-gray-50">
+                                    <h1>Flat/Apartment</h1>
+                                </div>
+                            </label>
+                            <label for="villa">
+                                <input id="villa" type="radio" name="raidobtn" value="2" class="hidden peer">
+                                <div class="flex items-center px-3 py-0.5 text-[13px] text-gray-500 bg-white border border-gray-200 rounded-full cursor-pointer peer-checked:bg-blue-100 peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-blue-700 hover:bg-gray-50">
+                                    <h1>Villa</h1>
+                                </div>
+                            </label>
+                            <label for="plot">
+                                <input id="plot" type="radio" name="raidobtn" value="3" class="hidden peer">
+                                <div class="flex items-center px-3 py-0.5 text-[13px] text-gray-500 bg-white border border-gray-200 rounded-full cursor-pointer peer-checked:bg-blue-100 peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-blue-700 hover:bg-gray-50">
+                                    <h1>Plot</h1>
+                                </div>
+                            </label>
+                            <label for="other">
+                                <input id="other" type="radio" name="raidobtn" value="3" class="hidden peer">
+                                <div class="flex items-center px-3 py-0.5 text-[13px] text-gray-500 bg-white border border-gray-200 rounded-full cursor-pointer peer-checked:bg-blue-100 peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-blue-700 hover:bg-gray-50">
+                                    <h1>Office</h1>
+                                </div>
+                            </label>
+                            <label for="other">
+                                <input id="other" type="radio" name="raidobtn" value="3" class="hidden peer">
+                                <div class="flex items-center px-3 py-0.5 text-[13px] text-gray-500 bg-white border border-gray-200 rounded-full cursor-pointer peer-checked:bg-blue-100 peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-blue-700 hover:bg-gray-50">
+                                    <h1>Other</h1>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="w-full mt-5">
+                        <p class="text-gray-600 text-[15px] mb-1">You're looking to.. <span class="text-red-600">*</span></p>
+                        <div class="flex items-center gap-x-3">
+                            <label for="sell">
+                                <input id="sell" type="radio" name="raidobtn" value="1bhk" class="hidden peer">
+                                <div class="flex items-center px-3 py-0.5 text-[13px] text-gray-500 bg-white border border-gray-200 rounded-full cursor-pointer peer-checked:bg-blue-100 peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-blue-700 hover:bg-gray-50">
+                                    <h1>Sell</h1>
+                                </div>
+                            </label>
+                            <label for="rent">
+                                <input id="rent" type="radio" name="raidobtn" value="2" class="hidden peer">
+                                <div class="flex items-center px-3 py-0.5 text-[13px] text-gray-500 bg-white border border-gray-200 rounded-full cursor-pointer peer-checked:bg-blue-100 peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-blue-700 hover:bg-gray-50">
+                                    <h1>Rent</h1>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <hr class="w-full px-3 my-6">
+
+                    <h3 class="text-slate-900 font-medium text-lg mb-3">Amenities</h3>
+                    <div class="w-full px-2">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+                            <div class="flex items-center mb-4">
+                                <input id="feature1" type="checkbox" value="" class="w-4 h-4">
+                                <label for="feature1" class="ml-2 text-sm text-slate-800">Parking</label>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <input id="feature1" type="checkbox" value="" class="w-4 h-4">
+                                <label for="feature1" class="ml-2 text-sm text-slate-800">Piped Gas</label>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <input id="feature1" type="checkbox" value="" class="w-4 h-4">
+                                <label for="feature1" class="ml-2 text-sm text-slate-800">Gym</label>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <input id="feature1" type="checkbox" value="" class="w-4 h-4">
+                                <label for="feature1" class="ml-2 text-sm text-slate-800">Park</label>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <input id="feature1" type="checkbox" value="" class="w-4 h-4">
+                                <label for="feature1" class="ml-2 text-sm text-slate-800">Lift</label>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <input id="feature1" type="checkbox" value="" class="w-4 h-4">
+                                <label for="feature1" class="ml-2 text-sm text-slate-800">Kids playarea</label>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <input id="feature1" type="checkbox" value="" class="w-4 h-4">
+                                <label for="feature1" class="ml-2 text-sm text-slate-800">Club House</label>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <input id="feature1" type="checkbox" value="" class="w-4 h-4">
+                                <label for="feature1" class="ml-2 text-sm text-slate-800">Swimming Pool</label>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <input id="feature1" type="checkbox" value="" class="w-4 h-4">
+                                <label for="feature1" class="ml-2 text-sm text-slate-800">Power Backup</label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Quick Preview -->
+            <div class="w-full sm:max-w-[300px] flex items-center flex-col">
+
+                <h1 class="text-[21px] mb-4 font-medium text-slate-800 mr-auto">Quick Preview</h1>
+
+                <div class="bg-white py-3 px-3 rounded-xl shadow-md">
+                    <img class="w-full max-w-[300px] rounded-xl shadow" src="https://images.pexels.com/photos/13203179/pexels-photo-13203179.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                    <h1 class="text-xl mt-3 font-semibold mb-0.5 ml-1.5">Kylv Vila</h1>
+                    <span class="flex items-center gap-x-1.5 text-gray-500  ml-1.5">
+                        <i class="bx bx-current-location"></i>
+                        <p>New York, USA</p>
+                    </span>
+                    <div class="flex items-center flex-wrap gap-x-2 mt-3 ml-1.5">
+                        <span class="bg-gray-100 rounded-md px-2 py-1.5 flex items-center gap-x-2">
+                            <i class='bx bxs-bed text-yellow-600 text-[20px]'></i>
+                            <p class="text-[13px]">1</p>
+                        </span>
+                        <span class="bg-gray-100 rounded-md px-2 py-1.5 flex items-center gap-x-2">
+                            <i class='bx bxs-bath text-blue-500 text-[20px]'></i>
+                            <p class="text-[13px]">2</p>
+                        </span>
+                        <span class="bg-gray-100 rounded-md px-2 py-1.5 flex items-center gap-x-2">
+                            <i class='bx bxs-ruler -rotate-45 text-green-500 text-[20px]'></i>
+                            <p class="text-[13px]">60 m<sup>2</sup></p>
+                        </span>
+                    </div>
+                    <div class="flex justify-between items-center mt-5 mb-2 ml-1.5">
+                        <a href="" class="bg-blue-600 text-white px-3 py-1.5 rounded-md text-[13px]">Buy Now</a>
+                        <h1 class="font-semibold text-slate-900 text-xl">$ 62000</h1>
+                    </div>
+                </div>
+
+                <span class="flex items-start text-[13px] bg-[#effff8] text-green-600 rounded-xl border px-2.5 py-2 gap-x-2 mt-4">
+                    <i class="bx bx-info-circle mt-1"></i>
+                    <p>This is preview when your property is published.</p>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <br>
+</body>
+
+</html>

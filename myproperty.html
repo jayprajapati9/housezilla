@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Property</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#f1f6ff]">
+
+    <header class="bg-white w-full">
+        <div class="w-full max-w-6xl mx-auto flex items-center justify-between py-5 px-5">
+            <div class="flex items-center flex-row gap-x-2">
+                <span class="grid items-center bg-blue-500 rounded-md text-[18px] p-1.5">
+                    <i class="bx bx-home text-white"></i>
+                </span>
+                <p class="text-blue-600 font-semibold text-lg">Houszilla</p>
+            </div>
+            <div class="hidden lg:flex text-gray-500 text-[17px] items-center gap-x-8">
+                <a href="" class="">Home</a>
+                <a href="" class="">Listing</a>
+                <a href="" class="text-blue-500 font-semibold">My Property</a>
+            </div>
+            <div class="flex items-center gap-x-2 sm:gap-x-3">
+                <p class="hidden sm:block text-[15px] text-gray-600">Jay Prajapati</p>
+                <button class="flex items-center cursor-pointer">
+                    <img class="w-8 h-8 rounded-full object-cover cover shadow-md" src="https://randomuser.me/api/portraits/men/10.jpg" alt="">
+                    <i class="bx bx-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <br><br>
+
+    <div class="w-full max-w-5xl mx-auto items-start flex gap-x-8">
+        <div class="w-full max-w-[280px] flex items-left flex-col gap-y-4 bg-white rounded-lg px-6 py-4">
+            <h1 class="text-lg font-medium text-slate-800">Edit Profile</h1>
+            <a href="addproperty.html" class="text-gray-500">Add Property</a>
+            <a href="receivedenquiry.html" class="text-gray-500">Received Inquiry</a>
+        </div>
+
+        <div class="w-full bg-white rounded-lg px-6 py-4">
+            <h1 class="text-lg font-medium text-slate-800 mb-4">My Property</h1>
+
+            <div class="w-full flex flex-col sm:flex-row items-center shadow-md border bg-white rounded-md px-3 py-3 mb-5">
+                <div class="w-full sm:w-auto">
+                    <img class="w-full sm:max-w-[400px] rounded-lg" src="https://static.makaan.com/1/1649866/291/131879558.jpeg?width=460&height=260" alt="">
+                </div>
+                <div class="w-full ml-4 mt-2">
+                    <p class="text-[16px] sm:text-[21px]">₹1.2 Cr</p>
+                    <h1 class="text-2xl font-semibold text-slate-900">3 Bhk Aparment</h1>
+                    <p>Vastrapur, Ahmedabad</p>
+                    <div class="flex items-center flew-wrap gap-2 mt-3">
+                        <span class="bg-gray-200 text-gray-500 text-[12px] px-1.5 rounded">RESALE</span>
+                    </div>
+                    <div class="flex items-center justify-end gap-x-4 mt-4 mr-3 sm:mr-0">
+                        <button class="inline-flex items-center text-white text-sm bg-blue-500 px-3 py-1 rounded-md">Update</button>
+                        <button class="inline-flex items-center text-white text-sm bg-red-500 px-3 py-1 rounded-md">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full flex flex-col sm:flex-row items-center shadow-md border bg-white rounded-md px-3 py-3 mb-5">
+                <div class="w-full sm:w-auto">
+                    <img class="w-full sm:max-w-[400px] rounded-lg" src="https://static.makaan.com/1/1649866/291/131879558.jpeg?width=460&height=260" alt="">
+                </div>
+                <div class="w-full ml-4 mt-2">
+                    <p class="text-[16px] sm:text-[21px]">₹1.2 Cr</p>
+                    <h1 class="text-2xl font-semibold text-slate-900">3 Bhk Aparment</h1>
+                    <p>Vastrapur, Ahmedabad</p>
+                    <div class="flex items-center flew-wrap gap-2 mt-3">
+                        <span class="bg-gray-200 text-gray-500 text-[12px] px-1.5 rounded">RESALE</span>
+                    </div>
+                    <div class="flex items-center justify-end gap-x-4 mt-4 mr-3 sm:mr-0">
+                        <button class="inline-flex items-center text-white text-sm bg-blue-500 px-3 py-1 rounded-md">Update</button>
+                        <button class="inline-flex items-center text-white text-sm bg-red-500 px-3 py-1 rounded-md">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

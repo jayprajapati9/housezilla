@@ -1,0 +1,72 @@
+[
+    {
+      "id": 1,
+      "propertyname": "3 BHK Apartment",
+      "location": "Vastrapur, Ahmedabad",
+      "price": 12000000,
+      "floorspacesqft": 1615,
+      "bhk": 3,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt arcu vel risus suscipit, nec scelerisque leo pretium.",
+      "propertyimage": "https://static.makaan.com/1/1649866/291/131879558.jpeg?width=460&height=260",
+      "publisher": {
+        "name": "Sharma Builders",
+        "type": "BUILDER"
+      }
+    },
+    {
+      "id": 2,
+      "propertyname": "2 BHK Flat",
+      "location": "Satellite, Ahmedabad",
+      "price": 8000000,
+      "floorspacesqft": 1200,
+      "bhk": 2,
+      "description": "Comfortable 2 BHK flat with modern amenities and great connectivity to key areas of the city.",
+      "propertyimage": "https://static.makaan.com/1/1649866/291/131879558.jpeg?width=460&height=260",
+      "publisher": {
+        "name": "Roy Construction",
+        "type": "BUILDER"
+      }
+    },
+    {
+      "id": 3,
+      "propertyname": "4 BHK Villa",
+      "location": "Bopal, Ahmedabad",
+      "price": 25000000,
+      "floorspacesqft": 3000,
+      "bhk": 4,
+      "description": "Spacious 4 BHK villa with a private garden and top-of-the-line amenities in a serene neighborhood.",
+      "propertyimage": "https://static.makaan.com/1/1649866/291/131879558.jpeg?width=460&height=260",
+      "publisher": {
+        "name": "Raj Properties",
+        "type": "BUILDER"
+      }
+    },
+    {
+      "id": 4,
+      "propertyname": "Studio Apartment",
+      "location": "S G Highway, Ahmedabad",
+      "price": 4500000,
+      "floorspacesqft": 500,
+      "bhk": 1,
+      "description": "Compact studio apartment, perfect for singles or students, located in a well-connected area.",
+      "propertyimage": "https://static.makaan.com/1/1649866/291/131879558.jpeg?width=460&height=260",
+      "publisher": {
+        "name": "Vijay Realtors",
+        "type": "AGENT"
+      }
+    },
+    {
+      "id": 5,
+      "propertyname": "5 BHK Mansion",
+      "location": "Gota, Ahmedabad",
+      "price": 40000000,
+      "floorspacesqft": 5000,
+      "bhk": 5,
+      "description": "Luxurious 5 BHK mansion with world-class amenities and exquisite interior design.",
+      "propertyimage": "https://static.makaan.com/1/1649866/291/131879558.jpeg?width=460&height=260",
+      "publisher": {
+        "name": "Dream Homes",
+        "type": "BUILDER"
+      }
+    }
+  ]

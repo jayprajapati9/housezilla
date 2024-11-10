@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .bgimage {
+            background-image: url(https://sbnri.com/blog/wp-content/uploads/2023/01/Strata-Property-Management-1.jpg);
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+        }
+
+        .bgoverlay {
+            width: 100%;
+            height: 100%;
+            background-color: #5595fb8e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bgimage">
+        <div class="bgoverlay">
+
+            <div class="bg-white relative w-full h-[75%] sm:h-5/6 max-w-5xl flex items-center justify-center rounded-xl mx-4 sm:mx-10">
+                <!-- Left Section -->
+                <div class="hidden sm:block w-full h-full max-w-xl bgimage rounded-l-xl"></div>
+
+                <!-- Right Section -->
+                <div class="w-full flex items-center justify-center flex-col px-5">
+                    <div class="absolute top-6 right-6">
+                        <a href="" class="text-slate-800 font-medium text-[14px] sm:text-[14px]">Login</a>
+                        <a href="" class="font-medium text-blue-500 border border-blue-500 bg-white text-[12px] sm:text-[13px] rounded-full px-4 ml-4 py-1.5">Create Account</a>
+                    </div>
+
+                    <span class="grid items-center bg-blue-500 rounded-md text-[28px] p-1.5 shadow mt-5">
+                        <i class="bx bx-home text-white"></i>
+                    </span>
+                    <p class="text-slate-800 font-semibold text-2xl">Welcome Back</p>
+                    <p class="text-sm text-gray-600">log in to your account</p>
+
+                    <div class="w-full max-w-[300px] text-left mt-5">
+                        <p class="text-[14px] text-gray-500 mb-1">Email</p>
+                        <input type="text" class="w-full bg-transparent border rounded-md px-4 py-1.5 outline-none foucs:outline-none focus:border-blue-700">
+                    </div>
+
+                    <div class="w-full max-w-[300px] text-left mt-5 mb-4">
+                        <p class="text-[14px] text-gray-500 mb-1">Password</p>
+                        <input type="text" class="w-full bg-transparent border rounded-md px-4 py-1.5 outline-none foucs:outline-none focus:border-blue-700">
+                    </div>
+
+                    <button class="bg-blue-500 mt-6 text-[14px] text-white font-semibold px-10 py-2 rounded-full">LOG IN</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

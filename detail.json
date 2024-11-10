@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "propertyname": "Luxury Apartment",
+    "location": "New York, NY",
+    "price": 1500000,
+    "description": "A beautiful luxury apartment in the heart of New York City.",
+    "floorspacesqft": 1200,
+    "status": "Available",
+    "resalenew": "New",
+    "age": 0,
+    "propertyimgarray": ["https://example.com/image1.jpg", "https://example.com/image2.jpg", "https://example.com/image3.jpg", "https://example.com/image4.jpg", "https://example.com/image5.jpg"],
+    "amenities": ["Gym", "Parking", "Security", "Lift", "Swimming Pool", "Power Backup"],
+    "publisher": {
+      "name": "John Doe",
+      "type": "Owner",
+      "phonenum": "+1 123 456 7890",
+      "email": "johndoe@example.com"
+    }
+  },
+  {
+    "id": 2,
+    "propertyname": "Modern Office Space",
+    "location": "San Francisco, CA",
+    "price": 500000,
+    "description": "A spacious modern office space available for rent.",
+    "floorspacesqft": 800,
+    "status": "For Rent",
+    "resalenew": "New",
+    "age": 1,
+    "propertyimgarray": ["https://example.com/office1.jpg", "https://example.com/office2.jpg", "https://example.com/office3.jpg", "https://example.com/office4.jpg", "https://example.com/office5.jpg"],
+    "amenities": ["Parking", "Security", "Power Backup"],
+    "publisher": {
+      "name": "Jane Smith",
+      "type": "Agent",
+      "phonenum": "+1 987 654 3210",
+      "email": "janesmith@realestate.com"
+    }
+  }
+]

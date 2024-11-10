@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Property</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .bgimg {
+            width: 100%;
+            height: 100%;
+            background-image: url(https://images.pexels.com/photos/4913427/pexels-photo-4913427.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .glass {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            background: rgba(71, 71, 71, 0.2);
+            border-radius: 0px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(15.5px);
+            -webkit-backdrop-filter: blur(15.5px);
+        }
+    </style>
+</head>
+
+<body class="bg-[#f1f6ff]">
+
+    <header class="bg-white w-full">
+        <div class="w-full max-w-6xl mx-auto flex items-center justify-between py-5 px-5">
+            <div class="flex items-center flex-row gap-x-2">
+                <span class="grid items-center bg-blue-500 rounded-md text-[18px] p-1.5">
+                    <i class="bx bx-home text-white"></i>
+                </span>
+                <p class="text-blue-600 font-semibold text-lg">Houszilla</p>
+            </div>
+            <div class="hidden lg:flex text-gray-500 text-[17px] items-center gap-x-8">
+                <a href="" class="">Home</a>
+                <a href="" class="">About</a>
+                <a href="" class="">Property</a>
+                <a href="" class="">Contact</a>
+            </div>
+            <div class="flex items-center gap-x-2 sm:gap-x-3">
+                <p class="hidden sm:block text-[15px] text-gray-600">Jay Prajapati</p>
+                <button class="flex items-center cursor-pointer">
+                    <img class="w-8 h-8 rounded-full object-cover cover shadow-md" src="https://randomuser.me/api/portraits/men/10.jpg" alt="">
+                    <i class="bx bx-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="hidden bgimg w-full h-[320px] border">
+        <div class="glass">
+            <h1 class="text-4xl text-white font-semibold">User Profile</h1>
+            <div class="flex items-center text-white mt-1 gap-x-2">
+                <a href="">Home</a>
+                <p>/</p>
+                <a href="" class="text-gray-300">User</a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="w-full max-w-5xl mx-auto items-start flex gap-x-8">
+        <div class="w-full max-w-[280px] flex items-left flex-col gap-y-4 bg-white rounded-lg px-6 py-4">
+            <h1 class="text-lg font-medium text-slate-800">Edit Profile</h1>
+            <a href="" class="text-gray-500">Change Password</a>
+            <a href="" class="text-gray-500">Add Property</a>
+            <a href="" class="text-gray-500">My Property</a>
+            <a href="" class="text-gray-500">Received Inquiry</a>
+            <a href="" class="text-gray-500">Answered Inquiry</a>
+        </div>
+        <div class="w-full bg-white rounded-lg px-6 py-4">
+            <h1 class="text-lg font-medium text-slate-800 mb-4">Personal Details</h1>
+
+            <p class="text-gray-700">Full Name</p>
+            <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="John" required>
+            <br>
+            <p class="text-gray-700">Email Address</p>
+            <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="John" required>
+            <br>
+            <p class="text-gray-700">Mobile Number</p>
+            <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="John" required>
+
+            <button class="bg-blue-600 text-sm text-white px-3 py-2 rounded-md mt-8">Save Changes</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

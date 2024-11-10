@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* .filtercontainer {
+            top: 79px;
+            /* left: 0px; * /
+            left: -100%;
+            height: 100vh;
+            overflow: scroll;
+        } */
+    </style>
+</head>
+
+<body class="bg-[#f1f6ff]">
+    <header class="bg-white sticky w-full h-20 top-0">
+        <div class="w-full max-w-6xl mx-auto flex items-center justify-between py-6 px-5">
+            <div class="flex items-center flex-row gap-x-2">
+                <span class="grid items-center bg-blue-500 rounded-md text-[18px] p-1.5">
+                    <i class="bx bx-home text-white"></i>
+                </span>
+                <p class="text-blue-600 font-semibold text-lg">Houszilla</p>
+            </div>
+            <div class="hidden lg:flex text-gray-500 text-[17px] items-center gap-x-8">
+                <a href="index.html" class="">Home</a>
+                <a href="" class="text-blue-500 font-semibold">Listing</a>
+                <a href="myproperty.html" class="">My Property</a>
+            </div>
+            <div class="flex items-center gap-x-2 sm:gap-x-3">
+                <p class="hidden sm:block text-[15px] text-gray-600">Jay Prajapati</p>
+                <button class="flex items-center cursor-pointer">
+                    <img class="w-8 h-8 rounded-full object-cover cover shadow-md" src="https://randomuser.me/api/portraits/men/10.jpg" alt="">
+                    <i class="bx bx-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="px-3">
+
+        <div class="mt-8 mb-6">
+            <h1 class="text-slate-800 font-bold text-3xl text-center">Find Your Favorite Property</h1>
+        </div>
+
+        <!-- Initial Search -->
+        <div class="bg-white max-w-5xl mx-auto grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-6 lg:grid-cols-5 py-5 px-4 items-center rounded-md shadow-md">
+            <div class="md:col-span-1">
+                <select class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                    <option value="" selected disabled>Select Type&hellip;</option>
+                    <option value="1">Apartment</option>
+                    <option value="2">Flat</option>
+                    <option value="3">Building</option>
+                    <option value="4">House</option>
+                    <option value="5">Villa</option>
+                    <option value="6">Office</option>
+                </select>
+            </div>
+            <div class="md:col-span-1">
+                <select class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                    <option value="" selected disabled>Select Status&hellip;</option>
+                    <option value="1">Rent</option>
+                    <option value="2">Sale</option>
+                </select>
+            </div>
+            <div class="md:col-span-2 lg:col-span-2">
+                <input type="text" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Enter City" required>
+            </div>
+            <div class="md:col-span-2 lg:col-span-1">
+                <button class="bg-blue-600 text-white px-3 py-2 rounded-md w-full">Search Property</button>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="w-full max-w-6xl  mx-auto flex">
+            <div class="filtercontainer static max-[960px]:absolute max-[960px]:-left-full w-full max-w-[360px] max-[1040px]:max-w-[300px]">
+                <!-- Filter Card -->
+                <div class="bg-white rounded-lg px-6 py-6 shadow-md">
+                    <div class="flex items-center justify-between">
+                        <p class="text-slate-800 font-bold text-xl">FILTER</p>
+                        <button>Clear all</button>
+                    </div>
+                    <div class="mt-5">
+                        <!-- Place Type Checkbox -->
+                        <p class="text-gray-500 font-semibold text-sm">TYPE OF PROPERTY</p>
+                        <div class="flex items-start justify-start flex-wrap gap-4 mt-3">
+                            <div class="flex items-center">
+                                <input checked id="apartment-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="apartment-checkbox" class="ml-2 text-sm font-medium text-gray-500">Apartment</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="villa-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="villa-checkbox" class="ml-2 text-sm font-medium text-gray-500">Villa</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="house-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="house-checkbox" class="ml-2 text-sm font-medium text-gray-500">House</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="plot-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="plot-checkbox" class="ml-2 text-sm font-medium text-gray-500">Plot</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="flat-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="flat-checkbox" class="ml-2 text-sm font-medium text-gray-500">Flat</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="office-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="office-checkbox" class="ml-2 text-sm font-medium text-gray-500">Office</label>
+                            </div>
+                        </div>
+
+                        <div class="my-7"></div>
+
+                        <!-- Price Range -->
+                        <p class="text-gray-500 font-semibold text-sm">PRICE RANGE</p>
+                        <div class="flex items-center justify-center gap-x-5 mt-2">
+                            <input type="text" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 pl-4" placeholder="Min">
+                            <input type="text" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 pl-4" placeholder="Max">
+                        </div>
+
+                        <div class="my-7"></div>
+
+                        <!-- Amenities -->
+                        <p class="text-gray-500 font-semibold text-sm">AMENITIES</p>
+                        <div class="flex items-center flex-wrap gap-3 mt-3">
+                            <input type="checkbox" id="parking-option" value="" class="hidden peer" required="">
+                            <label for="parking-option" class="flex items-center px-3 py-1 text-sm text-gray-500 bg-white border border-gray-200 rounded-full cursor-pointer peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-gray-600 hover:bg-gray-50">
+                                <h1>Parking</h1>
+                            </label>
+                            <input type="checkbox" id="lift-option" value="" class="hidden peer" required="">
+                            <label for="lift-option" class="flex items-center px-3 py-1 text-sm text-gray-500 bg-white border border-gray-200 rounded-full cursor-pointer peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-gray-600 hover:bg-gray-50">
+                                <h1>Lift</h1>
+                            </label>
+                            <input type="checkbox" id="powerbackup-option" value="" class="hidden peer" required="">
+                            <label for="powerbackup-option" class="flex items-center px-3 py-1 text-sm text-gray-500 bg-white border border-gray-200 rounded-full cursor-pointer peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-gray-600 hover:bg-gray-50">
+                                <h1>Power Backup</h1>
+                            </label>
+                            <input type="checkbox" id="gas-option" value="" class="hidden peer" required="">
+                            <label for="gas-option" class="flex items-center px-3 py-1 text-sm text-gray-500 bg-white border border-gray-200 rounded-full cursor-pointer peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-gray-600 hover:bg-gray-50">
+                                <h1>Gas Pipeline</h1>
+                            </label>
+                            <input type="checkbox" id="park-option" value="" class="hidden peer" required="">
+                            <label for="park-option" class="flex items-center px-3 py-1 text-sm text-gray-500 bg-white border border-gray-200 rounded-full cursor-pointer peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-gray-600 hover:bg-gray-50">
+                                <h1>Park</h1>
+                            </label>
+                            <input type="checkbox" id="clubhouse-option" value="" class="hidden peer" required="">
+                            <label for="clubhouse-option" class="flex items-center px-3 py-1 text-sm text-gray-500 bg-white border border-gray-200 rounded-full cursor-pointer peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-gray-600 hover:bg-gray-50">
+                                <h1>Club House</h1>
+                            </label>
+                        </div>
+
+                        <div class="my-7"></div>
+
+                        <!-- Size -->
+                        <p class="text-gray-500 font-semibold text-sm">SIZE</p>
+                        <div class="flex items-center justify-center gap-x-5 mt-2">
+                            <input type="text" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 pl-4" placeholder="Min sq ft">
+                            <input type="text" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 pl-4" placeholder="Max sq ft">
+                        </div>
+
+                        <div class="my-7"></div>
+
+                        <!-- BHK -->
+                        <p class="text-gray-500 font-semibold text-sm">BHK</p>
+                        <div class="flex items-center flex-wrap gap-x-2 gap-y-2 mt-3">
+                            <label for="onebhk">
+                                <input id="onebhk" type="checkbox" value="1bhk" class="hidden peer">
+                                <div class="flex items-center px-3 py-1 text-sm text-gray-500 bg-white border border-gray-200 rounded-full cursor-pointer peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-gray-600 hover:bg-gray-50">
+                                    <h1>1 BHK</h1>
+                                </div>
+                            </label>
+                            <label for="twobhk">
+                                <input id="twobhk" type="checkbox" value="2" class="hidden peer">
+                                <div class="flex items-center px-3 py-1 text-sm text-gray-500 bg-white border border-gray-200 rounded-full cursor-pointer peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-gray-600 hover:bg-gray-50">
+                                    <h1>2 BHK</h1>
+                                </div>
+                            </label>
+                            <label for="threebhk">
+                                <input id="threebhk" type="checkbox" value="3" class="hidden peer">
+                                <div class="flex items-center px-3 py-1 text-sm text-gray-500 bg-white border border-gray-200 rounded-full cursor-pointer peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-gray-600 hover:bg-gray-50">
+                                    <h1>3 BHK</h1>
+                                </div>
+                            </label>
+                            <label for="fourbhk">
+                                <input id="fourbhk" type="checkbox" value="4" class="hidden peer">
+                                <div class="flex items-center px-3 py-1 text-sm text-gray-500 bg-white border border-gray-200 rounded-full cursor-pointer peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-gray-600 hover:bg-gray-50">
+                                    <h1>4 BHK</h1>
+                                </div>
+                            </label>
+                            <label for="fourupbhk">
+                                <input id="fourupbhk" type="checkbox" value="4up" class="hidden peer">
+                                <div class="flex items-center px-3 py-1 text-sm text-gray-500 bg-white border border-gray-200 rounded-full cursor-pointer peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-gray-600 hover:bg-gray-50">
+                                    <h1>+4 BHK</h1>
+                                </div>
+                            </label>
+
+                        </div>
+
+                        <div class="my-7"></div>
+
+                        <!-- Furnishing Type -->
+                        <p class="text-gray-500 font-semibold text-sm">FURNISHED TYPE</p>
+                        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 mt-3">
+                            <div class="flex items-center">
+                                <input checked id="unfurnished-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="unfurnished-checkbox" class="ml-2 text-sm font-medium text-gray-500">Unfurnished</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="semifurnished-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="semifurnished-checkbox" class="ml-2 text-sm font-medium text-gray-500">Semi-furnished</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="fullyfurnished-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="fullyfurnished-checkbox" class="ml-2 text-sm font-medium text-gray-500">Fully Furnished</label>
+                            </div>
+                        </div>
+
+                        <div class="my-7"></div>
+
+                        <!-- New / Resale -->
+                        <p class="text-gray-500 font-semibold text-sm">NEW / RESALE</p>
+                        <select class="bg-white border border-gray-300 text-gray-900 mt-3 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                            <option value="1">Both</option>
+                            <option value="2">New</option>
+                            <option value="3">Resale</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full px-0 sm:px-7">
+                <div class="flex justify-between items-center gap-x-4 mb-4">
+                    <p class="text-lg text-slate-700 font-normal">16272 results | Property in Ahmedabad for Sale</p>
+                    <!-- <p>11,209 properties for sale in Ahmedabad</p> -->
+                    <button class="hidden max-[960px]:flex items-center justify-center flex-row text-md rounded-md gap-x-2 bg-blue-600 text-white px-3 py-1">
+                        <i class="bx bx-filter"></i>
+                        <p>Filter</p>
+                    </button>
+                </div>
+                <div class="w-full max-w-4xl">
+
+                    <!-- Property Card -->
+                    <div class="w-full flex flex-col sm:flex-row items-center shadow-md bg-white rounded-md px-3 py-3 mb-5">
+                        <div class="w-full sm:w-auto">
+                            <!-- Property Image -->
+                            <img class="w-full sm:max-w-[400px] rounded-lg" src="https://static.makaan.com/1/1649866/291/131879558.jpeg?width=460&height=260" alt="">
+
+                            <!-- Publisher Info -->
+                            <div class="inline-flex items-center gap-x-3 mt-3">
+                                <img class="w-10 h-10 rounded-lg" src="https://randomuser.me/api/portraits/men/9.jpg" alt="">
+                                <span class="flex items-start justify-center flex-col">
+                                    <h1 class="text-slate-900 font-semibold text-[16px] leading-1 text-ellipsis overflow-hidden">Sharma Builders</h1>
+                                    <p class="text-gray-500 text-sm">BUILDER</p>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Proeprty Info -->
+                        <div class="w-full ml-4 mt-2">
+                            <h1 class="text-2xl font-semibold text-slate-900">3 Bhk Aparment</h1>
+                            <p>Vastrapur, Ahmedabad</p>
+                            <hr class="w-full my-3">
+                            <div class="mt-3 flex items-center justify-center gap-x-5 sm:gap-x-10 mb-3">
+                                <p class="text-[16px] sm:text-[21px]">₹1.2 Cr</p>
+                                <p class="text-[16px] sm:text-[21px]">1615 sq ft</p>
+                                <p class="text-[16px] sm:text-[21px]">3 BHK</p>
+                            </div>
+                            <p class="text-gray-600 text-[14px] leading-5 text-ellipsis overflow-hidden line-clamp-2">lore Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde laboriosam ipsa</p>
+                            <div class="flex items-center flew-wrap gap-2 mt-3">
+                                <span class="bg-blue-100 text-blue-500 text-[12px] px-1.5 rounded">FEATURED</span>
+                                <span class="bg-gray-200 text-gray-500 text-[12px] px-1.5 rounded">RESALE</span>
+                            </div>
+                            <div class="flex items-center justify-end gap-x-4 mt-4 mr-3 sm:mr-0">
+                                <button class="inline-flex items-center text-blue-600">Brochure <i class="bx bxs-download"></i></button>
+                                <a href="" class="bg-blue-600 text-white text-[14px] rounded-md px-3 py-1.5">Connect Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property Card -->
+                    <div class="w-full flex flex-col sm:flex-row items-center shadow-md bg-white rounded-md px-3 py-3 mb-5">
+                        <div class="w-full sm:w-auto">
+                            <!-- Property Image -->
+                            <img class="w-full sm:max-w-[400px] rounded-lg" src="https://static.makaan.com/1/1649866/291/131879558.jpeg?width=460&height=260" alt="">
+
+                            <!-- Publisher Info -->
+                            <div class="inline-flex items-center gap-x-3 mt-3">
+                                <img class="w-10 h-10 rounded-lg" src="https://randomuser.me/api/portraits/men/9.jpg" alt="">
+                                <span class="flex items-start justify-center flex-col">
+                                    <h1 class="text-slate-900 font-semibold text-[16px] leading-1 text-ellipsis overflow-hidden">Sharma Builders</h1>
+                                    <p class="text-gray-500 text-sm">BUILDER</p>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Proeprty Info -->
+                        <div class="w-full ml-4 mt-2">
+                            <h1 class="text-2xl font-semibold text-slate-900">3 Bhk Aparment</h1>
+                            <p>Vastrapur, Ahmedabad</p>
+                            <hr class="w-full my-3">
+                            <div class="mt-3 flex items-center justify-center gap-x-5 sm:gap-x-10 mb-3">
+                                <p class="text-[16px] sm:text-[21px]">₹1.2 Cr</p>
+                                <p class="text-[16px] sm:text-[21px]">1615 sq ft</p>
+                                <p class="text-[16px] sm:text-[21px]">3 BHK</p>
+                            </div>
+                            <p class="text-gray-600 text-[14px] leading-5 text-ellipsis overflow-hidden line-clamp-2">lore Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde laboriosam ipsa</p>
+                            <div class="flex items-center flew-wrap gap-2 mt-3">
+                                <span class="bg-blue-100 text-blue-500 text-[12px] px-1.5 rounded">FEATURED</span>
+                                <span class="bg-gray-200 text-gray-500 text-[12px] px-1.5 rounded">RESALE</span>
+                            </div>
+                            <div class="flex items-center justify-end gap-x-4 mt-4 mr-3 sm:mr-0">
+                                <button class="inline-flex items-center text-blue-600">Brochure <i class="bx bxs-download"></i></button>
+                                <a href="" class="bg-blue-600 text-white text-[14px] rounded-md px-3 py-1.5">Connect Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property Card -->
+                    <div class="w-full flex flex-col sm:flex-row items-center shadow-md bg-white rounded-md px-3 py-3 mb-5">
+                        <div class="w-full sm:w-auto">
+                            <!-- Property Image -->
+                            <img class="w-full sm:max-w-[400px] rounded-lg" src="https://static.makaan.com/1/1649866/291/131879558.jpeg?width=460&height=260" alt="">
+
+                            <!-- Publisher Info -->
+                            <div class="inline-flex items-center gap-x-3 mt-3">
+                                <img class="w-10 h-10 rounded-lg" src="https://randomuser.me/api/portraits/men/9.jpg" alt="">
+                                <span class="flex items-start justify-center flex-col">
+                                    <h1 class="text-slate-900 font-semibold text-[16px] leading-1 text-ellipsis overflow-hidden">Sharma Builders</h1>
+                                    <p class="text-gray-500 text-sm">BUILDER</p>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Proeprty Info -->
+                        <div class="w-full ml-4 mt-2">
+                            <h1 class="text-2xl font-semibold text-slate-900">3 Bhk Aparment</h1>
+                            <p>Vastrapur, Ahmedabad</p>
+                            <hr class="w-full my-3">
+                            <div class="mt-3 flex items-center justify-center gap-x-5 sm:gap-x-10 mb-3">
+                                <p class="text-[16px] sm:text-[21px]">₹1.2 Cr</p>
+                                <p class="text-[16px] sm:text-[21px]">1615 sq ft</p>
+                                <p class="text-[16px] sm:text-[21px]">3 BHK</p>
+                            </div>
+                            <p class="text-gray-600 text-[14px] leading-5 text-ellipsis overflow-hidden line-clamp-2">lore Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde laboriosam ipsa</p>
+                            <div class="flex items-center flew-wrap gap-2 mt-3">
+                                <span class="bg-blue-100 text-blue-500 text-[12px] px-1.5 rounded">FEATURED</span>
+                                <span class="bg-gray-200 text-gray-500 text-[12px] px-1.5 rounded">RESALE</span>
+                            </div>
+                            <div class="flex items-center justify-end gap-x-4 mt-4 mr-3 sm:mr-0">
+                                <button class="inline-flex items-center text-blue-600">Brochure <i class="bx bxs-download"></i></button>
+                                <a href="" class="bg-blue-600 text-white text-[14px] rounded-md px-3 py-1.5">Connect Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property Card -->
+                    <div class="w-full flex flex-col sm:flex-row items-center shadow-md bg-white rounded-md px-3 py-3 mb-5">
+                        <div class="w-full sm:w-auto">
+                            <!-- Property Image -->
+                            <img class="w-full sm:max-w-[400px] rounded-lg" src="https://static.makaan.com/1/1649866/291/131879558.jpeg?width=460&height=260" alt="">
+
+                            <!-- Publisher Info -->
+                            <div class="inline-flex items-center gap-x-3 mt-3">
+                                <img class="w-10 h-10 rounded-lg" src="https://randomuser.me/api/portraits/men/9.jpg" alt="">
+                                <span class="flex items-start justify-center flex-col">
+                                    <h1 class="text-slate-900 font-semibold text-[16px] leading-1 text-ellipsis overflow-hidden">Sharma Builders</h1>
+                                    <p class="text-gray-500 text-sm">BUILDER</p>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Proeprty Info -->
+                        <div class="w-full ml-4 mt-2">
+                            <h1 class="text-2xl font-semibold text-slate-900">3 Bhk Aparment</h1>
+                            <p>Vastrapur, Ahmedabad</p>
+                            <hr class="w-full my-3">
+                            <div class="mt-3 flex items-center justify-center gap-x-5 sm:gap-x-10 mb-3">
+                                <p class="text-[16px] sm:text-[21px]">₹1.2 Cr</p>
+                                <p class="text-[16px] sm:text-[21px]">1615 sq ft</p>
+                                <p class="text-[16px] sm:text-[21px]">3 BHK</p>
+                            </div>
+                            <p class="text-gray-600 text-[14px] leading-5 text-ellipsis overflow-hidden line-clamp-2">lore Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde laboriosam ipsa</p>
+                            <div class="flex items-center flew-wrap gap-2 mt-3">
+                                <span class="bg-blue-100 text-blue-500 text-[12px] px-1.5 rounded">FEATURED</span>
+                                <span class="bg-gray-200 text-gray-500 text-[12px] px-1.5 rounded">RESALE</span>
+                            </div>
+                            <div class="flex items-center justify-end gap-x-4 mt-4 mr-3 sm:mr-0">
+                                <button class="inline-flex items-center text-blue-600">Brochure <i class="bx bxs-download"></i></button>
+                                <a href="" class="bg-blue-600 text-white text-[14px] rounded-md px-3 py-1.5">Connect Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property Card -->
+                    <div class="w-full flex flex-col sm:flex-row items-center shadow-md bg-white rounded-md px-3 py-3 mb-5">
+                        <div class="w-full sm:w-auto">
+                            <!-- Property Image -->
+                            <img class="w-full sm:max-w-[400px] rounded-lg" src="https://static.makaan.com/1/1649866/291/131879558.jpeg?width=460&height=260" alt="">
+
+                            <!-- Publisher Info -->
+                            <div class="inline-flex items-center gap-x-3 mt-3">
+                                <img class="w-10 h-10 rounded-lg" src="https://randomuser.me/api/portraits/men/9.jpg" alt="">
+                                <span class="flex items-start justify-center flex-col">
+                                    <h1 class="text-slate-900 font-semibold text-[16px] leading-1 text-ellipsis overflow-hidden">Sharma Builders</h1>
+                                    <p class="text-gray-500 text-sm">BUILDER</p>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Proeprty Info -->
+                        <div class="w-full ml-4 mt-2">
+                            <h1 class="text-2xl font-semibold text-slate-900">3 Bhk Aparment</h1>
+                            <p>Vastrapur, Ahmedabad</p>
+                            <hr class="w-full my-3">
+                            <div class="mt-3 flex items-center justify-center gap-x-5 sm:gap-x-10 mb-3">
+                                <p class="text-[16px] sm:text-[21px]">₹1.2 Cr</p>
+                                <p class="text-[16px] sm:text-[21px]">1615 sq ft</p>
+                                <p class="text-[16px] sm:text-[21px]">3 BHK</p>
+                            </div>
+                            <p class="text-gray-600 text-[14px] leading-5 text-ellipsis overflow-hidden line-clamp-2">lore Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde laboriosam ipsa</p>
+                            <div class="flex items-center flew-wrap gap-2 mt-3">
+                                <span class="bg-blue-100 text-blue-500 text-[12px] px-1.5 rounded">FEATURED</span>
+                                <span class="bg-gray-200 text-gray-500 text-[12px] px-1.5 rounded">RESALE</span>
+                            </div>
+                            <div class="flex items-center justify-end gap-x-4 mt-4 mr-3 sm:mr-0">
+                                <button class="inline-flex items-center text-blue-600">Brochure <i class="bx bxs-download"></i></button>
+                                <a href="" class="bg-blue-600 text-white text-[14px] rounded-md px-3 py-1.5">Connect Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <br>
+    <!-- <div class="w-full max-w-[200px] relative border border-gray-300 text-gray-800 bg-white shadow-lg">
+                <label for="propertytype" class="sr-only focus:outline-none">My field</label>
+                <select class="appearance-none w-full py-1 px-2 bg-white focus:outline-none rounded-lg" name="whatever" id="propertytype">
+                    <option value="">Select Type&hellip;</option>
+                    <option value="1">Apartment</option>
+                    <option value="2">Flat</option>
+                    <option value="3">Building</option>
+                    <option value="3">House</option>
+                    <option value="3">Villa</option>
+                    <option value="3">Office</option>
+                </select>
+                <div class="pointer-events-none absolute right-0 top-0 bottom-0 flex items-center px-2 text-gray-700 border-l">
+                    <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </div>
+            </div> -->
+</body>
+
+</html>
